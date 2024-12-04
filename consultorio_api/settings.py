@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['your-backend-domain.onrender.com', 'clinident.netlify.app']
+ALLOWED_HOSTS = ['back-vd4c.onrender.com', 'clinident.netlify.app']
 
 # Application definition
 
