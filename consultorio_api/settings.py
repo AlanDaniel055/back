@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'consultorio_api.wsgi.application'
 # Database configuration using the DATABASE_URL provided by Render
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://root:m0IcuAabA3rBSmls5peumBcgShEAJ3nc@dpg-ct7t4jd2ng1s73etuhdg-a.oregon-postgres.render.com/consultorio_db_lnwt',
+        default=os.getenv('DATABASE_URL', 'postgres://root:m0IcuAabA3rBSmls5peumBcgShEAJ3nc@dpg-ct7t4jd2ng1s73etuhdg-a.oregon-postgres.render.com/consultorio_db_lnwt'),
         conn_max_age=600
     )
 }
